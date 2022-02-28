@@ -33,7 +33,7 @@ const SignButton: VFC<props> = (props) =>{
     }
 
     return (
-        <button class="
+        <button className="
         bg-transparent
         text-blue-700 
         font-sans 
@@ -42,14 +42,19 @@ const SignButton: VFC<props> = (props) =>{
         border 
         border-blue-500 
         rounded 
+        flex
         hover:( 
             bg-blue-500 
             text-white 
             border-transparent
         )"
         >
-            {Icon}
-            {props.name}
+            <div className='mt-1'>
+                {Icon}
+            </div>
+            <div className='ml-2'>
+                {props.name}
+            </div>
        </button> 
     );
 }

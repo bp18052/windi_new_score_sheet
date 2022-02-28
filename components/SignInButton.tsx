@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 import dynamic from 'next/dynamic';
-import 'windi.css';
+import styles from '../styles/Home.module.css';
 
 //load icons
 const Google = dynamic<{}>(()=>import('react-icons/bs').then(module=>module.BsGoogle));
@@ -48,7 +48,7 @@ const SignButton: VFC<props> = (props) =>{
             border-transparent
         )"
         >
-            <Google />
+            {Icon}
             {props.name}
        </button> 
     );

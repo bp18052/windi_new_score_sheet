@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
-        <SignButton name="twitter"/>
+        <SignButton name="Twitter"/>
       </main>
       <Footer />
     </div>

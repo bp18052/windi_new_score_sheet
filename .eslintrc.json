@@ -1,3 +1,18 @@
 {
+  "env": {
+    "jest/globals": true,
+    "es6": true
+  },
+  "plugins": [
+    "jest"
+  ],
+  "extends": [
+    "plugin:jest/recommended",
+    "plugin:jest/style"
+  ],
+  "rules": {
+    "jest/consistent-test-it": ["error", {"fn": "it"}],
+    "jest/require-top-level-describe": ["error"]
+  },
   "extends": "next/core-web-vitals"
 }

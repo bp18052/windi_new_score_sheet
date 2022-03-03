@@ -1,5 +1,6 @@
 import { VFC } from 'react';
 import dynamic from 'next/dynamic';
+import styles from '../styles/Home.module.css';
 
 //load icons
 const Google = dynamic<{}>(()=>import('react-icons/bs').then(module=>module.BsGoogle));
@@ -42,19 +43,17 @@ const SignButton: VFC<props> = (props) =>{
         border-blue-500 
         rounded 
         flex
-        transition-colors
         hover:( 
             bg-blue-500 
             text-white 
             border-transparent
-            shadow-xl
         )"
         >
             <div className='mt-1'>
                 {Icon}
             </div>
             <div className='ml-2'>
-                {props.name} Sign In
+                {props.name}
             </div>
        </button> 
     );

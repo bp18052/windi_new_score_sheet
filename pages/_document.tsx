@@ -6,7 +6,7 @@ const MyDocument = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="scoreSheet" content="MyApp" />
-        <link rel="icon" href="/appLogo.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

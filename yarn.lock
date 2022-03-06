@@ -226,6 +226,16 @@
     jiti "^1.13.0"
     windicss "^3.5.0"
 
+"@windicss/plugin-animations@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-animations/-/plugin-animations-1.0.9.tgz#abd7c82d906ebd7d61cdc62a3019b60e8c57ca72"
+  integrity sha512-9WsQsPzLurkwV5zaMCwmylxfSHlQ1pPmzud4ysvMkMBRB7obub9ESmqlHefcCjEhatz/ZROi1U1XOuOPPUO1nA==
+
+"@windicss/plugin-question-mark@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-question-mark/-/plugin-question-mark-0.1.1.tgz#437de5bbd1e27432a4693def2fba2f1a335b8876"
+  integrity sha512-LTnySh28mFncJqCw7VjZzYD3HkJynjHQ8wAIgsZUPTi8WzDJtUeYyFc8/ImXGL/jon55zzg9yy9y/lUyCvvrmA==
+
 "@windicss/plugin-utils@^1.7.1":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.8.1.tgz#ee14d668cc1bbd386cc96ab69a83c088428b37b6"
@@ -1389,6 +1399,11 @@ pathe@^0.2.0:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
   integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
 
+pattern.css@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pattern.css/-/pattern.css-1.0.0.tgz#91ee9e4ca99300c8ab1a47348e325333840d9f4b"
+  integrity sha512-2bW2rCCdLGgvJPpiSJGrg44onxRWTMQpn6tooAayomsCHiso3nehlp5OugNYHSXxYuFfQ1vtDXtGbq6H206qLw==
+
 phosphor-react@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.4.0.tgz#6c3d5f9d3433c3c2456b902891d24ec677f89dc3"
@@ -1530,6 +1545,11 @@ scheduler@^0.20.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+scrollmagic@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/scrollmagic/-/scrollmagic-2.0.8.tgz#e0d7aff804c393c022fdc0c566f1edce3b4e9ed7"
+  integrity sha512-UYXEGBPVLziovXl3FjHGkY9c4UXKUKopIdXwWR2JapWxCo0U345wYegi7rcsv5vHf/ktc1bSNWy4QRFiV+Yccw==
 
 semver@^6.3.0:
   version "6.3.0"

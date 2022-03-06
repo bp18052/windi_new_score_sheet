@@ -43,6 +43,8 @@ const SignButton: VFC<props> = (props) =>{
         border-blue-500 
         rounded 
         flex
+        animate-animated
+        animate-fadeInUp
         hover:( 
             bg-blue-500 
             text-white 

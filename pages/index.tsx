@@ -46,6 +46,7 @@ const Home: NextPage = () => {
           </a>
         </div>
         <SignButton name="Twitter"/>
+        <div className='visible font-milka font-xl font-normal not-italic'>test font</div>
       </main>
       <Footer />
     </div>

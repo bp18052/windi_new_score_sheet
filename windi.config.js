@@ -10,6 +10,16 @@ export default defineConfig({
     exclude: ['node_modules', '.git', '.next'],
   },
   theme: {
+    backdropBrightness: {
+      sm: '50',
+      md: '100',
+      lg: '150',
+    },
+    backdropBlur: {
+      '4xl': '72px',
+      '5xl': '96px',
+      '6xl': '128px',
+    },
     zIndex: {
       first: 10,
       second: 20,
@@ -86,7 +96,7 @@ export default defineConfig({
         hingeSpeed: 2000,
         bounceInSpeed: 750,
         bounceOutSpeed: 750,
-        animationDelaySpeed: 1000,
+        animationDelaySpeed: 300,
       },
     }),
   ],

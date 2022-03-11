@@ -1,6 +1,7 @@
-import { defineConfig } from 'windicss/helpers'
+import { defineConfig, transform } from 'windicss/helpers'
 
 export default defineConfig({
+  darkMode: 'class',
   attributify: true,
   extract: {
     include: [
@@ -99,5 +100,6 @@ export default defineConfig({
         animationDelaySpeed: 300,
       },
     }),
+    transform('flowbite/plugin'),
   ],
 });

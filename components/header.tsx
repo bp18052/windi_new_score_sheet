@@ -1,5 +1,6 @@
 import {VFC} from 'react'
 import AppIcon from '../public/AppLogo.svg'
+import Link from 'next/link';
 
 const header: VFC = () => {
     return (
@@ -10,7 +11,9 @@ const header: VFC = () => {
                     <h1 className=' milka text-size-3xl text-yellow-300'>Archers</h1>
                 </a>
             <nav>
-
+                <Link href='/LoginPage'>
+                    <h2 className='itc text-size-xl text-light-50 mr-4 hover:underline'>Sign Up</h2>
+                </Link>
             </nav>
             </div>
         </header>

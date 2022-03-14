@@ -101,5 +101,6 @@ export default defineConfig({
       },
     }),
     transform('flowbite/plugin'),
+    transform("daisyui"),
   ],
 });

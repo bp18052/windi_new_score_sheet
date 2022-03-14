@@ -21,7 +21,8 @@ const Home: NextPage = () => {
           left-10 
           text-light-400 
           lg:(text-8xl top-3/5) 
-          hover:underline'>
+          hover:underline
+           font-medium'>
             Let&apos;s record <br />
             your score
           </h1>

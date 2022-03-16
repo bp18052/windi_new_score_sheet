@@ -7,17 +7,19 @@ import supabase from '../utils/supabaseClient'
 
 const loginForm :NextPage = () =>{
     return(
-        <div className=' bg-gray-800'>
+        <div>
             <Header />
-            <div className=' bg-gray-300 w-5/6'>
-                <div className='card w-96 bg-gray-600 shadow-xl'>
-                    <div className='card-body text-center'>
-                        <h1>Sign In</h1>
+            <div className=' flex bg-gray-800 content-center justify-center'>
+                <div style={{width:'50vh', height:'100vh'}}>
+                    <div className='card w-96 bg-gray-300 shadow-xl'>
+                        <div className='card-body text-center'>
+                            <h1>Sign In</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className=' w-1/2'>
-                <Image src={LoginImage} alt="archery target sheet" layout="fill" objectFit="contain"/>
+                <div style={{width: '50vh',height: '100vh'}}>
+                    <Image src={LoginImage} alt="archery target sheet" layout="fill" objectFit='contain' objectPosition={'right center'}/>
+                </div>
             </div>
         </div>
     )

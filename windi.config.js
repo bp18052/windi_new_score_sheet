@@ -21,6 +21,10 @@ export default defineConfig({
       '5xl': '96px',
       '6xl': '128px',
     },
+    backdropGrayscale: {
+      50: '0.5',
+      80: '0.8',
+    },
     zIndex: {
       first: 10,
       second: 20,

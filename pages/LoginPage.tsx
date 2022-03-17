@@ -10,15 +10,15 @@ const loginForm :NextPage = () =>{
         <div>
             <Header />
             <Image src={LoginImage} alt="archery target sheet" layout="fill" objectFit='cover'/>
-            <div className='flex'>
-                <div className=' z-2 bg-gray-800 h-screen w-50vw flex content-center justify-center'>
-                    <div className='card w-96 bg-gray-300 shadow-xl'>
+            <div className='md:flex'>
+                <div className=' h-screen z-2 md:(bg-gray-800 w-50vw) flex justify-center'>
+                    <div className=' my-25 card w-96 bg-gray-300 shadow-xl all:(backdrop-filter backdrop-grayscale-80 backdrop-brightness-100)'>
                         <div className='card-body text-center'>
                             <h1>Sign In</h1>
                         </div>
                     </div>
                 </div>
-                <span className=' bg-transparent  h-screen w-50vw block'/>
+                <span className=' md:(bg-transparent  h-screen w-50vw block)'/>
             </div>
         </div>
     )

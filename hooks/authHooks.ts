@@ -1,3 +1,2 @@
-import { useState } from 'react'
-import { supabase } from '../utils/supabaseClient'
-
+import { useState } from 'react';
+import { supabase } from '../utils/supabaseClient';

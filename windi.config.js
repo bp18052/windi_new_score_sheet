@@ -1,12 +1,12 @@
-import { defineConfig, transform } from 'windicss/helpers'
+import { defineConfig, transform } from 'windicss/helpers';
 
 export default defineConfig({
   darkMode: 'class',
   attributify: true,
   extract: {
     include: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
     ],
     exclude: ['node_modules', '.git', '.next'],
   },
@@ -31,36 +31,36 @@ export default defineConfig({
     },
     extend: {
       fontFamily: {
-        itc:['itc avant garde gothic pro'],
-        milka:['milka'],
-        milkaBrittle:['milka brittle'],
-        aryadouble:['arya double'],
-        aryatriple:['arya triple']
+        itc: ['itc avant garde gothic pro'],
+        milka: ['milka'],
+        milkaBrittle: ['milka brittle'],
+        aryadouble: ['arya double'],
+        aryatriple: ['arya triple'],
       },
       fontWeight: {
-        'hairline': 100,
+        hairline: 100,
         'extra-light': 100,
-        'thin': 200,
-        'light': 300,
-        'normal': 400,
-        'medium': 500,
-        'semibold': 600,
-        'bold': 700,
-        'extrabold': 800,
+        thin: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
         'extra-bold': 800,
-        'black': 900,
+        black: 900,
       },
-      backgroundImage: theme => ({
-        'top-img': "url('public/HomeImage.jpg')"
-      })
+      backgroundImage: (theme) => ({
+        'top-img': "url('public/HomeImage.jpg')",
+      }),
     },
     fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'tiny': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
+      xs: '.75rem',
+      sm: '.875rem',
+      tiny: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
@@ -79,12 +79,12 @@ export default defineConfig({
       blur: 'blur(20px)',
     },
   },
-  shortcuts:{
-    'itc': 'visible font-itc font-normal not-italic',
-    'milka': 'visible font-milka font-normal not-italic',
+  shortcuts: {
+    itc: 'visible font-itc font-normal not-italic',
+    milka: 'visible font-milka font-normal not-italic',
     'milka-brittle': 'visible font-milkaBrittle font-normal not-italic',
-    'aryadouble': 'visible font-aryadouble font-normal not-italic',
-    'aryatriple': 'visible font-aryatriple font-normal not-italic',
+    aryadouble: 'visible font-aryadouble font-normal not-italic',
+    aryatriple: 'visible font-aryatriple font-normal not-italic',
   },
   variants: {
     filter: ['responsive'],
@@ -105,6 +105,6 @@ export default defineConfig({
       },
     }),
     transform('flowbite/plugin'),
-    transform("daisyui"),
+    transform('daisyui'),
   ],
 });

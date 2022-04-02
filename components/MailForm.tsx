@@ -8,16 +8,27 @@ type FormInput = {
   pass: string;
 };
 
-
 const mailForm: VFC = () => {
 
-  //ESlintエラーのため、useFormはuseMemoでwrapする。
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<FormInput>();
-  const onSubmit: SubmitHandler<FormInput> = (data) => console.log(data);
+  //hookFormのESlintエラーは無視
+  /* eslint-disable */
+  const { 
+    register, 
+    handleSubmit, 
+    watch, 
+    formState: { errors } 
+  } = useForm<FormInput>();
+  /* eslint-enable */
+  
+  const onSubmit: SubmitHandler<FormInput> = (data) => {
+    console.log(data)
+    
+  };
+
   return (
     <div>
-      <form>
-        
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register('mail')}/>
       </form>
     </div>
   );

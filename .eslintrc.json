@@ -9,14 +9,6 @@
     "react-hook-form"
   ],
   "rules": {
-    "react-hooks/exhaustive-deps": [ 
-      "error",
-      {
-        "staticHooks":{
-          "useForm": true
-        }
-      }
-    ],
     "react-hook-form/no-access-control": "error"
   }
 

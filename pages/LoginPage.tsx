@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import LoginImage from '../public/SignInBackImg.jpg';
 import { Auth, Typography, Button } from '@supabase/ui';
-import supabase from '../utils/supabaseClient';
+import { supabase } from '../utils/supabaseClient';
 
 const loginForm: NextPage = () => {
   return (

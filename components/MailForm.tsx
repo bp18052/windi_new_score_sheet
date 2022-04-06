@@ -6,9 +6,11 @@ import { supabase } from '../utils/supabaseClient';
 
 const mailForm: VFC = () => {
 
-  const [loading, setLoading] = useState(false);
   //hookFormのESlintエラーは無視
   /* eslint-disable */
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
+
   const { 
     register, 
     handleSubmit, 
@@ -26,11 +28,10 @@ const mailForm: VFC = () => {
         password: data.pass,
       });
       if (error) throw error;
-    }catch(sucess){
-
     }catch(error){
       console.log('signUpError');
       console.log(error);
+      setServerError(error);
     }
   };
 
@@ -38,6 +39,7 @@ const mailForm: VFC = () => {
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register('mail')}/>
+        <ErrorMessage errors={errors} name="singleErrorInput" />
       </form>
     </div>
   );

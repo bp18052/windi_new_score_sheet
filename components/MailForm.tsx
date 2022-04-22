@@ -6,9 +6,10 @@ import { supabase } from '../utils/supabaseClient';
 
 const mailForm: VFC = () => {
 
-  const [loading, setLoading] = useState(false);
-  //hookFormのESlintエラーは無視
+  //hookのESlintエラーは無視
   /* eslint-disable */
+  const [loading, setLoading] = useState(false);
+  const [serverSideError, setServerSideError] = useState("");
   const { 
     register, 
     handleSubmit, 
@@ -26,18 +27,29 @@ const mailForm: VFC = () => {
         password: data.pass,
       });
       if (error) throw error;
-    }catch(sucess){
-
+      
     }catch(error){
       console.log('signUpError');
       console.log(error);
+      
     }
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('mail')}/>
+        <label>Mail</label>
+        <input {...register('mail',{
+          required: true,
+          maxLength: 20,
+
+        })}/>
+        <label>Passward</label>
+        <input {...register('pass',{
+          required: true,
+          maxLength: 10,
+        })}/>
+        <p>{serverSideError}</p>
       </form>
     </div>
   );

@@ -1,5 +1,5 @@
 
 type FormInput = {
-  mail?: string;
-  pass?: string;
+  mail: string;
+  pass: string;
 };
